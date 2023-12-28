@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Путеводитель</string>
+    <string name="createNoteTitle">Theme</string>
+
+
+
+    <string name="textGuide">Путеводитель</string>
+    <string name="textCreateNote">Создание заметки</string>
+    <string name="textNoteTitle">Заголовок заметки</string>
+    <string name="textTheme">Тематика</string>
+
+    <string name="textNoteContent">Текст заметки</string>
+    <string name="textYourImpression">Ваше впечатление</string>
+    <string name="textNote">Заметка</string>
+    <string name="firstTimeMap">Первое открытие карты занимает какое-то время, пожалуйста подождите</string>
+
+    <string name="textLocation">Место</string>
+    <string name="textNewLabel">Новая метка</string>
+    <string name="textNoteModified">Ваша заметка изменена</string>
+    <string name="textNoteSaved">Ваша заметка сохранена</string>
+
+
+
+
+    <string name="lorem_ipsum">
+
+    </string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

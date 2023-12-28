@@ -1,0 +1,53 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainActivityFrameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/mainActivityRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/mainToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#6750A3"
+            app:title="@string/textGuide"
+            app:titleTextColor="#FFFFFF" />
+
+        <ImageButton
+            android:id="@+id/mainCreateNote"
+            android:layout_width="60dp"
+            android:layout_height="64dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="-1dp"
+            android:background="#6750A3"
+            app:srcCompat="@android:drawable/ic_menu_add" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/mainToolbar"
+            android:background="#004C69">
+
+            <LinearLayout
+                android:id="@id/linearMain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+
+
+
+
+    </RelativeLayout>
+
+</FrameLayout>

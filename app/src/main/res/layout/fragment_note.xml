@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragmentReadNote"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#004C69">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/mainToolbar"
+            android:layout_width="0dp"
+            android:layout_height="59dp"
+            android:background="?attr/colorPrimary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:title="@string/textNote"
+            app:titleTextColor="#FFFFFF"
+            tools:ignore="MissingConstraints" />
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="0dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="4dp"
+            android:background="#004C69"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mainToolbar">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/fragmentCreateNote"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".CreateNoteFragment">
+
+
+                <TextView
+                    android:id="@+id/textViewDateAndTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/textYourImpression"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <RatingBar
+                    android:id="@+id/ratingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="84dp"
+
+                    android:layout_marginTop="12dp"
+                    android:numStars="5"
+                    android:progressBackgroundTint="#808080"
+                    android:progressTint="@color/white"
+                    android:rating="3"
+                    android:stepSize="1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewDateAndTime" />
+
+                <EditText
+                    android:id="@+id/editTextTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="108dp"
+                    android:backgroundTint="#FFFFFF"
+                    android:hint="@string/textNoteTitle"
+                    android:textColorHint="#B3FFFFFF"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/textViewDateAndTime" />
+
+                <EditText
+                    android:id="@+id/editTextTopic"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:backgroundTint="#FFFFFF"
+                    android:hint="@string/textTheme"
+                    android:textColorHint="#B3FFFFFF"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/editTextTitle" />
+
+                <EditText
+                    android:id="@+id/editTextNote"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:backgroundTint="#FFFFFF"
+                    android:hint="@string/textNoteContent"
+                    android:textColorHint="#B3FFFFFF"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/editTextTopic"
+                    app:layout_constraintVertical_bias="0.0" />
+                <ImageButton
+                    android:id="@+id/trashButton"
+                    android:layout_width="65dp"
+                    android:layout_height="58dp"
+                    android:background="#004C69"
+                    android:src="@android:drawable/ic_menu_delete"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="-3dp" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+
+
+        <fragment
+            android:id="@+id/mapView1"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="0dp"
+            android:layout_height="386dp"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
+
+        <ImageButton
+            android:id="@+id/saveReadButton"
+            android:layout_width="65dp"
+            android:layout_height="58dp"
+            android:background="#6750A3"
+            android:src="@android:drawable/ic_menu_save"
+            app:layout_constraintEnd_toEndOf="@+id/mainToolbar"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

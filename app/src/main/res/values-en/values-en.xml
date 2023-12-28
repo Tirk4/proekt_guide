@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Guide</string>
+    <string name="createNoteTitle">Theme</string>
+
+
+
+    <string name="textGuide">Guide</string>
+    <string name="firstTimeMap">First opening of note will take some time, please wait</string>
+    <string name="textYourImpression">Your Impression</string>
+    <string name="textCreateNote">Create Note</string>
+    <string name="textNote">Note</string>
+    <string name="textNoteTitle">Note Title</string>
+    <string name="textTheme">Theme</string>
+    <string name="textNoteContent">Note Content</string>
+
+    <string name="textLocation">Location</string>
+    <string name="textNewLabel">New Label</string>
+    <string name="textNoteModified">Your note has been modified</string>
+    <string name="textNoteSaved">Your note has been saved</string>
+
+
+
+
+
+
+    <string name="lorem_ipsum">
+
+    </string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
